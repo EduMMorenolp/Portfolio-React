@@ -5,41 +5,77 @@ import './Certificados.css';
 const Certificados = () => {
   const imagenes = [
     {
-      src: "../imagenes/certificados/Backend 1_ Introducción a Java.jpeg",
-      alt: "Backend 1_ Introducción a Java",
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/0.png",
+      alt: "Certificado",
     },
     {
-      src: "../imagenes/certificados/Backend 2_ Java Y Base de Datos.jpeg",
-      alt: "Backend 2_ Java Y Base de Datos",
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/1.png",
+      alt: "Certificado",
     },
     {
-      src: "../imagenes/certificados/UniversidadHTML.jpg",
-      alt: "Introducción a la Programación",
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/2.png",
+      alt: "Certificado",
     },
     {
-      src: "../imagenes/certificados/UniversidadCSS.jpg",
-      alt: "UniversidadCSS",
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/3.png",
+      alt: "Certificado",
     },
     {
-      src: "../imagenes/certificados/UniversidadDeProgramacion_Python_Java_JavaScript.jpg",
-      alt: "UniversidadDeProgramacion_Python_Java_JavaScript",
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/4.png",
+      alt: "Certificado",
     },
     {
-      src: "../imagenes/certificados/UniversidadHTML.jpg",
-      alt: "UniversidadHTML",
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/5.png",
+      alt: "Certificado",
     },
+    {
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/6.png",
+      alt: "Certificado",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/7.png",
+      alt: "Certificado",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/8.png",
+      alt: "Certificado",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/9.png",
+      alt: "Certificado",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/10.png",
+      alt: "Certificado",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/11.png",
+      alt: "Certificado",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/12.png",
+      alt: "Certificado",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/13.png",
+      alt: "Certificado",
+    }
   ];
 
   return (
     <div id="educacion" className="tarjeta">
       <h3>Certificaciones</h3>
-      <Carousel>
+      <Carousel interval={1500}>
         {imagenes.map((imagen, index) => (
           <Carousel.Item key={index}>
             <img className="d-block w-100" src={imagen.src} alt={imagen.alt} />
           </Carousel.Item>
         ))}
       </Carousel>
+
+      {/* {imagenes.map((imagen, index) => (
+        <img className="" src={imagen.src} alt={imagen.alt} />
+      ))} */}
     </div>
   );
 }

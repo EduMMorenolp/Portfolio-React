@@ -7,11 +7,12 @@ function Skills() {
             <h3>Habilidades</h3>
             <div className="columnas">
                 <div className="ceddi">
-                    <h3>Entorno de desarrollo integrado (IDE)</h3>
+                    <h3>Entorno de desarrollo</h3>
                     <ul>
                         <li><i className="fab fa-microsoft"></i> Vs code</li>
                         <li><i className="fab fa-java"></i> Netbeans</li>
                         <li><i className="fab fa-google"></i>Google Colab</li>
+                        <li><i className="fas fa-scroll"></i>Deepnote</li>
                     </ul>
                 </div>
 
@@ -40,6 +41,15 @@ function Skills() {
                 </div>
 
                 <div className="cde">
+                    <h3>Mas Herramientas</h3>
+                    <ul>
+                        <li><i className="fas fa-code"></i>Sprinboot</li>
+                        <li><i className="fas fa-code"></i>Numpy</li>
+                        <li><i className="fas fa-code"></i>Pandas</li>
+                        <li><i className="fas fa-code"></i>Matplotlib</li>
+                        <li><i className="fas fa-code"></i>Seaborn</li>
+                    </ul>
+
                     <h3>Diseño y edición</h3>
                     <ul>
                         <li><i className="fas fa-file-word"></i> Word</li>
@@ -47,7 +57,6 @@ function Skills() {
                         <li><i className="fas fa-file-powerpoint"></i> PowerPoint</li>
                         <li><i className="fab fa-figma"></i> Figma</li>
                         <li><i className="fas fa-chart-line"></i>Looker Studio</li>
-                        <li><i className="fas fa-scroll"></i>Deepnote</li>
                         <li><i className="fas fa-project-diagram"></i>UML (Unified Modeling Language)</li>
                     </ul>
                 </div>
@@ -93,6 +102,7 @@ function Skills() {
                                 <li><i className="fas fa-star"></i>Angular - Udemy</li>
                                 <li><i className="fas fa-star"></i>Script - Udemy</li>
                                 <li><i className="fas fa-star"></i>Looker Studio - Udemy</li>
+                                <li><i className="fas fa-star"></i>Springboot - Egg</li>
                             </ul>
                         </li>
                     </ul>

@@ -8,7 +8,7 @@ function Main() {
       <p className="lead">¡Explora mis proyectos y conoce más sobre mí! en Contacto</p>
         <div id="sobre-mi" className="tarjeta">
           <h3>Sobre mí</h3>
-          <img src="/imagenes/fotoEduMMoreno.png" alt="Foto de Eduardo Manuel Moreno"/>
+          <img src= {process.env.PUBLIC_URL + "/imagenes/fotoEduMMoreno.png"} alt="Foto de Eduardo Manuel Moreno"/>
           <hr></hr>
           <p>
             Soy un programador iniciado con una pasión por la tecnología y la resolución de problemas.

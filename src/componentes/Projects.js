@@ -75,13 +75,13 @@ function Projects() {
   ];
 
   return (
-      <div id="projects" className="tarjeta">
+      <div id="projects" className=" tarjeta">
       <hr></hr>
       <h2 className="display-4 text-center">Proyectos</h2>
       <hr></hr>
       <div className="row">
         {projects.map((project) => (
-          <div key={project.id} className="col-md-6">
+          <div key={project.id} className="col">
             <div className="card mb-4 ceddi">
               <div className="card-body mb-4">
                 <h3 className="card-title mb-4">{project.title}</h3>

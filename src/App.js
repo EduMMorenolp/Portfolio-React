@@ -9,6 +9,7 @@ import Certificados from './componentes/Certificados';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import { Element } from 'react-scroll';
+import MusicPlayer from './componentes/MusicPlayer';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <Barra onSectionChange={handleSectionChange}/>
+      <MusicPlayer />
       <Element name="Inicio">
         {currentSection === "Inicio" && <Main />}
       </Element>

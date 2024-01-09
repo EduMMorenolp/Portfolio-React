@@ -27,9 +27,11 @@
 }
 
 .nombre-estilo {
-  font-size: 24px;
-  color: #FF0000;
-  font-family: Arial, sans-serif; 
+  font-size: 32px;
+  color: #53eb3f;
+  font-family: Tektur, cursive; 
+  font-weight: 'bold';
+  text-shadow: 2px 2px 4px black;
 }
 
 .nombre-container {

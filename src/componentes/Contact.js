@@ -1,24 +1,101 @@
 import React from 'react';
 
+const socialLinks = [
+  {
+    id: 1,
+    platform: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/eduardo-m-moreno-programador/',
+    iconClass: 'fab fa-linkedin',
+    color: '#0077B5',
+  },
+  {
+    id: 2,
+    platform: 'GitHub',
+    link: 'https://github.com/EduMMorenolp',
+    iconClass: 'fab fa-github',
+  },
+  {
+    id: 3,
+    platform: 'Instagram',
+    link: 'https://www.instagram.com/edu.m.morenolp/',
+    iconClass: 'fab fa-instagram',
+    color: '#E4405F',
+  },
+  {
+    id: 4,
+    platform: 'Twitter',
+    link: 'https://twitter.com/EduMMorenolp',
+    iconClass: 'fab fa-twitter',
+    color: '#1DA1F2',
+  },
+  {
+    id: 6,
+    platform: 'Youtube',
+    link: 'https://www.youtube.com/@edummorenolp',
+    iconClass: 'fab fa-youtube',
+    color: '#FF0000',
+  },
+  {
+    id: 7,
+    platform: 'Twitch',
+    link: 'https://www.twitch.tv/edummorenolp',
+    iconClass: 'fab fa-twitch',
+    color: '#9146FF',
+  },
+];
+
+const contactText = {
+  title: {
+    espanol: "Contacto",
+    english: "Contact",
+  },
+  email: {
+    espanol: "e.m.morenolp@gmail.com",
+    english: "e.m.morenolp@gmail.com",
+  },
+  cv: {
+    espanol: "Curriculum Vitae",
+    english: "Curriculum Vitae",
+  },
+  downloadCV: {
+    espanol: "Descargar CV",
+    english: "Download CV",
+  },
+  contactMessage: {
+    espanol: "Si deseas ponerte en contacto conmigo o tienes alguna consulta, no dudes en enviarme un mensaje. Estaré encantado de ayudarte.",
+    english: "If you want to get in touch with me or have any inquiries, feel free to send me a message. I'll be happy to help.",
+  },
+  contactForm: {
+    espanol: "Puedes utilizar el formulario de contacto a continuación o escribirme directamente a mi dirección de correo electrónico.",
+    english: "You can use the contact form below or write to me directly at my email address.",
+  },
+  lookingForward: {
+    espanol: "¡Espero tener noticias tuyas pronto!",
+    english: "Looking forward to hearing from you soon!",
+  },
+};
+
 function Contact() {
+  const language = 'espanol'; // Cambia a 'english' para cambiar el idioma
+
   return (
     <section id="contact" className="container text-center">
       <div id="contacto" className="tarjeta">
-        <h2>Contacto</h2>
-        <p><a href="mailto:e.m.morenolp@gmail.com">e.m.morenolp@gmail.com</a></p>
-        <p>Curriculum Vitae: <a href="descargas/Curriculum%20Developer%202023.docx" download className="boton-descargar">Descargar CV</a></p>
-        <p>Si deseas ponerte en contacto conmigo o tienes alguna consulta, no dudes en enviarme un mensaje. Estaré encantado de ayudarte.</p>
-        <p>Puedes utilizar el formulario de contacto a continuación o escribirme directamente a mi dirección de correo electrónico.</p>
-        <p>¡Espero tener noticias tuyas pronto!</p>
+        <h2>{contactText.title[language]}</h2>
+        <p><a href={`mailto:${contactText.email[language]}`}>{contactText.email[language]}</a></p>
+        <p>{contactText.cv[language]}: <a href="descargas/Curriculum%20Developer%202023.docx" download className="boton-descargar">{contactText.downloadCV[language]}</a></p>
+        <p>{contactText.contactMessage[language]}</p>
+        <p>{contactText.contactForm[language]}</p>
+        <p>{contactText.lookingForward[language]}</p>
         <div className="social2-links">
           <ul className="sidebar2">
-            <li><a href="https://www.linkedin.com/in/eduardo-m-moreno-programador/" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin" style={{ color: '#0077B5' }}> LinkedIn</i></a></li>
-            <li><a href="https://github.com/EduMMorenolp" target="_blank" rel="noopener noreferrer"><i className="fab fa-github"> GitHub</i></a></li>
-            <li><a href="https://www.instagram.com/edu.m.morenolp/" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram" style={{ color: '#E4405F' }}> Instagram</i></a></li>
-            <li><a href="https://twitter.com/EduMMorenolp" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter" style={{ color: '#1DA1F2' }}> Twitter</i></a></li>
-            <li><a href="https://discord.gg/HPdMbjPx" target="_blank" rel="noopener noreferrer"><i className="fab fa-discord" style={{ color: '#7289DA' }}> Discord</i></a></li>
-            <li><a href="https://www.youtube.com/@edummorenolp" target="_blank" rel="noopener noreferrer"><i className="fab fa-youtube" style={{ color: '#FF0000' }}> Youtube</i></a></li>
-            <li><a href="https://www.twitch.tv/edummorenolp" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitch" style={{ color: '#9146FF' }}> Twitch</i></a></li>
+            {socialLinks.map((link) => (
+              <li key={link.id}>
+                <a href={link.link} target="_blank" rel="noopener noreferrer">
+                  <i className={link.iconClass} style={{ color: link.color }}>{` ${link.platform}`}</i>
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
       </div>
@@ -27,5 +104,6 @@ function Contact() {
 }
 
 export default Contact;
+
 
 

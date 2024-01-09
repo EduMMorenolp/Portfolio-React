@@ -10,7 +10,9 @@ function Barra({ onSectionChange }) {
     const [nombre] = useState("Eduardo M Moreno");
     const [currentIndex, setCurrentIndex] = useState(0);
     const [languageContent, setLanguage] = useState(textContent['espanol']);
-    const duracionIntervalo = 500;
+    const duracionIntervalo = 200;
+
+
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -30,7 +32,7 @@ function Barra({ onSectionChange }) {
 
     const handleLanguageChange = () => {
         const newLanguage = languageContent === textContent['espanol'] ? textContent['english'] : textContent['espanol'];
-        
+
         setLanguage(newLanguage);
         console.log("Cambiando Idioma a", newLanguage);
     };
@@ -44,6 +46,10 @@ function Barra({ onSectionChange }) {
                             <span className="nombre-estilo">
                                 {nombre.slice(0, currentIndex)}
                             </span>
+                            <style>
+                                @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Tektur&display=swap');
+                            </style>
+
                         </div>
                     </Fragment>
                 </Navbar.Brand>
@@ -65,7 +71,7 @@ function Barra({ onSectionChange }) {
                         {languageContent.contacto}
                     </Nav.Link>
                 </Navbar.Collapse>
-                
+
                 <div className="language-button">
                     <button onClick={handleLanguageChange}>
                         {languageContent === textContent['espanol'] ? 'In English' : 'En Español'}
@@ -73,6 +79,7 @@ function Barra({ onSectionChange }) {
                 </div>
             </Container>
         </Navbar>
+
     );
 }
 

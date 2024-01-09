@@ -113,3 +113,104 @@ function Skills() {
 }
 
 export default Skills;
+
+/**
+import React from 'react';
+import './Skills.css';
+
+const skillsText = {
+    sectionTitle: {
+        espanol: "Habilidades",
+        english: "Skills",
+    },
+    categories: [
+        {
+            title: {
+                espanol: "Entorno de desarrollo",
+                english: "Development Environment",
+            },
+            items: [
+                { icon: "fab fa-microsoft", text: "Vs code" },
+                { icon: "fab fa-java", text: "Netbeans" },
+                { icon: "fab fa-google", text: "Google Colab" },
+                { icon: "fas fa-scroll", text: "Deepnote" },
+            ],
+        },
+        {
+            title: {
+                espanol: "Lenguajes",
+                english: "Languages",
+            },
+            items: [
+                { icon: "fab fa-java", text: "Java" },
+                { icon: "fab fa-python", text: "Python" },
+                { icon: "fab fa-html5", text: "HTML5" },
+                { icon: "fab fa-css3", text: "CSS" },
+                { icon: "fab fa-js", text: "JavaScript" },
+                { icon: "fab fa-react", text: "React" },
+            ],
+        },
+        {
+            title: {
+                espanol: "Control de versiones",
+                english: "Version Control",
+            },
+            tools: [
+                { icon: "fab fa-git", text: "Git" },
+                { icon: "fab fa-github", text: "GitHub" },
+            ],
+        },
+        // ... Otras categorías
+        {
+            title: {
+                espanol: "Habilidades personales",
+                english: "Soft Skills",
+            },
+            items: [
+                { icon: "fas fa-comments", text: "Comunicación efectiva" },
+                { icon: "fas fa-users", text: "Trabajo en equipo" },
+                { icon: "fas fa-lightbulb", text: "Resolución de problemas" },
+                // ... Otros elementos
+            ],
+        },
+        {
+            title: {
+                espanol: "Idiomas",
+                english: "Languages",
+            },
+            items: [
+                { icon: "fas fa-book", text: "Inglés: Intermedio" },
+                { icon: "fas fa-flag", text: "Español: Nativo" },
+            ],
+        },
+        // ... Otras categorías
+    ],
+};
+
+function Skills() {
+    const language = 'espanol'; // Cambia a 'english' para cambiar el idioma
+
+    return (
+        <div id="habilidades" className="tarjeta">
+            <h3>{skillsText.sectionTitle[language]}</h3>
+            <div className="columnas">
+                {skillsText.categories.map((category, index) => (
+                    <div key={index} className="categoria">
+                        <h3>{category.title[language]}</h3>
+                        <ul>
+                            {category.items.map((item, itemIndex) => (
+                                <li key={itemIndex}>
+                                    <i className={item.icon}></i> {item.text}
+                                </li>
+                            ))}
+                        </ul>
+                    </div>
+                ))}
+            </div>
+        </div>
+    );
+}
+
+export default Skills;
+
+ */

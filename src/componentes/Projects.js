@@ -26,7 +26,7 @@ function Projects() {
     {
       id: 1,
       title: 'Portfolio 0.1 v',
-      description: 'Primer portfolio que realize',
+      description: 'Primer portfolio que realize, implementando los primeros conocimientos que adquiri',
       tecnologias: ['HTML', 'JavaScript', 'CSS', 'Bootstrap'],
       linkYotube: 'https://www.youtube.com/embed/cMoa_k5ESX4',
       link: 'https://www.ejemplolink1.com',
@@ -34,7 +34,7 @@ function Projects() {
     {
       id: 2,
       title: 'Aprender a Programar',
-      description: 'Descripción del proyecto 1.',
+      description: 'Proyecto para la comunidad, con tutoriales de cada lenguaje para aprender a programar',
       tecnologias: ['HTML', 'JavaScript', 'CSS', 'Bootstrap'],
       linkYotube: 'https://www.youtube.com/embed/a3uv39OAn4U',
       link: 'https://www.ejemplolink1.com',
@@ -75,13 +75,13 @@ function Projects() {
   ];
 
   return (
-      <div id="projects" className=" tarjeta">
+      <div id="projects">
       <hr></hr>
       <h2 className="display-4 text-center">Proyectos</h2>
       <hr></hr>
       <div className="row">
         {projects.map((project) => (
-          <div key={project.id} className="col">
+          <div key={project.id} className="col-4">
             <div className="card mb-4 ceddi">
               <div className="card-body mb-4">
                 <h3 className="card-title mb-4">{project.title}</h3>
@@ -97,7 +97,7 @@ function Projects() {
                     <li></li>
                   )}
                 </ul>
-                <p className="card-text">{project.description}</p>
+                <p className="card-text container">{project.description}</p>
                 <div className="Video">
                   <iframe
                     className="embed-responsive-item"

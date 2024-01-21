@@ -2,29 +2,13 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Barra.css';
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState } from 'react';
 import textContent from '../textContent';
 
 
 function Barra({ onSectionChange }) {
-    const [nombre] = useState("Eduardo M Moreno");
-    const [currentIndex, setCurrentIndex] = useState(0);
+
     const [languageContent, setLanguage] = useState(textContent['espanol']);
-    const duracionIntervalo = 200;
-
-
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            if (currentIndex < nombre.length) {
-                setCurrentIndex(currentIndex + 1);
-            } else {
-                setCurrentIndex(nombre.length);
-            }
-        }, duracionIntervalo);
-
-        return () => clearInterval(interval);
-    }, [currentIndex, nombre]);
 
     const handleNavLinkClick = (sectionName) => {
         onSectionChange(sectionName);
@@ -40,19 +24,11 @@ function Barra({ onSectionChange }) {
     return (
         <Navbar expand="lg" className="bg-body">
             <Container>
-                <Navbar.Brand href="#home">
-                    <Fragment>
-                        <div className="nombre-container">
-                            <span className="nombre-estilo">
-                                {nombre.slice(0, currentIndex)}
-                            </span>
-                            <style>
-                                @import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&family=Tektur&display=swap');
-                            </style>
-
-                        </div>
-                    </Fragment>
-                </Navbar.Brand>
+                <div className="language-button">
+                    <button onClick={handleLanguageChange}>
+                        {languageContent === textContent['espanol'] ? 'In English' : 'En Español'}
+                    </button>
+                </div>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="custom-collapse">
                     <Nav.Link onClick={() => handleNavLinkClick("Inicio")}>
@@ -72,11 +48,7 @@ function Barra({ onSectionChange }) {
                     </Nav.Link>
                 </Navbar.Collapse>
 
-                <div className="language-button">
-                    <button onClick={handleLanguageChange}>
-                        {languageContent === textContent['espanol'] ? 'In English' : 'En Español'}
-                    </button>
-                </div>
+
             </Container>
         </Navbar>
 

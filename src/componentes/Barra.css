@@ -26,17 +26,4 @@
   background-color: #0056b3;
 }
 
-.nombre-estilo {
-  font-size: 32px;
-  color: #53eb3f;
-  font-family: Tektur, cursive; 
-  font-weight: 'bold';
-  text-shadow: 2px 2px 4px black;
-}
-
-.nombre-container {
-  width: 300px;
-  overflow: hidden;
-  white-space: nowrap;
-}
 

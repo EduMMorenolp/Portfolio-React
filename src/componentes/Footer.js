@@ -1,5 +1,6 @@
 import React from 'react';
 import "./Footer.css"
+import MusicPlayer from './MusicPlayer';
 
 function Footer() {
     const socialLinks = [
@@ -49,6 +50,8 @@ function Footer() {
             <div>
                 <img src="https://profile-counter.glitch.me/EduMReact/count.svg?" />
             </div>
+            <br></br>
+            <MusicPlayer />
         </footer>
     );
 }

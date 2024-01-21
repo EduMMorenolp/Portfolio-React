@@ -40,3 +40,18 @@
   object-fit: cover;
   margin-top: 15px;
 }
+
+.nombre-estilo {
+  font-size: 32px;
+  color: #0b0c0b;
+  font-family: Tektur, cursive; 
+  text-shadow: 2px 2px 4px black;
+  align-items: flex-end;
+}
+
+.nombre-container {
+  overflow: hidden;
+  white-space: nowrap;
+  align-items: center;
+}
+

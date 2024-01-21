@@ -15,7 +15,6 @@ import MusicPlayer from './componentes/MusicPlayer';
 function App() {
   const [currentSection, setCurrentSection] = useState("Inicio");
   
-
   const handleSectionChange = (sectionName) => {
     setCurrentSection(sectionName);
   };
@@ -23,7 +22,6 @@ function App() {
   return (
     <div className="App">
       <Barra onSectionChange={handleSectionChange}/>
-      <MusicPlayer />
       <Element name="Inicio">
         {currentSection === "Inicio" && <Main />}
       </Element>

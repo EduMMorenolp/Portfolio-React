@@ -1,5 +1,5 @@
 import './Main.css';
-import React, { useState, useEffect, Fragment } from 'react';
+import React, { useState, useEffect} from 'react';
 
 function Main() {
 
@@ -32,7 +32,7 @@ function Main() {
       </div>
 
       <p className="lead">¡ Explora mis proyectos y conoce más sobre mí en Contacto ! </p>
-      <h3>Sobre mí</h3>
+      <h2>Sobre mí</h2>
       <img src={process.env.PUBLIC_URL + "/imagenes/fotoEduMMoreno.png"} alt="Foto de Eduardo Manuel Moreno" />
       <hr></hr>
       <p>

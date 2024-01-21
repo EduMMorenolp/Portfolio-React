@@ -7,7 +7,7 @@ const MusicPlayer = () => {
 
     return (
         <div className="container-audio">
-            <audio controls autoplay ref={audioRef} src={song} />
+            <audio controls muted autoplay ref={audioRef} src={song} />
         </div>
     );
 };

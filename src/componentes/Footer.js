@@ -39,7 +39,7 @@ function Footer() {
                 <ul>
                     {socialLinks.map((social, index) => (
                         <li key={index}>
-                            <a href={social.url} rel="noreferrer">
+                            <a href={social.url} rel="IconsRedes">
                                 <i className={social.iconClass}></i>
                                 <span className="social-name " style={{ color: social.color }}>{social.name}</span>
                             </a>
@@ -48,7 +48,7 @@ function Footer() {
                 </ul>
             </div>
             <div>
-                <img src="https://profile-counter.glitch.me/EduMReact/count.svg?" />
+                <img src="https://profile-counter.glitch.me/EduMReact/count.svg?" alt='Contador'/>
             </div>
             <br></br>
             <MusicPlayer />

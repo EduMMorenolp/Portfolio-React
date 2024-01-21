@@ -65,17 +65,13 @@ const Certificados = () => {
   return (
     <div id="educacion" className="tarjeta">
       <h3>Certificaciones</h3>
-      <Carousel interval={1500}>
+      <Carousel interval={3000}>
         {imagenes.map((imagen, index) => (
           <Carousel.Item key={index}>
             <img className="d-block w-100" src={imagen.src} alt={imagen.alt} />
           </Carousel.Item>
         ))}
       </Carousel>
-
-      {/* {imagenes.map((imagen, index) => (
-        <img className="" src={imagen.src} alt={imagen.alt} />
-      ))} */}
     </div>
   );
 }

@@ -31,12 +31,12 @@ function Main() {
         </style>
       </div>
 
-      <p className="lead">¡Explora mis proyectos y conoce más sobre mí! en Contacto</p>
+      <p className="lead">¡ Explora mis proyectos y conoce más sobre mí en Contacto ! </p>
       <h3>Sobre mí</h3>
       <img src={process.env.PUBLIC_URL + "/imagenes/fotoEduMMoreno.png"} alt="Foto de Eduardo Manuel Moreno" />
       <hr></hr>
       <p>
-        Soy un programador iniciado con una pasión por la tecnología y la resolución de problemas.
+        Soy un programador con una pasión por la tecnología y la resolución de problemas.
         En busca de oportunidades y proyectos emocionantes.
       </p>
     </div>

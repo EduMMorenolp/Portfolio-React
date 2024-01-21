@@ -26,4 +26,7 @@
   background-color: #0056b3;
 }
 
+.navbar-collapse {
+  flex-grow: 0 !important;
+}
 

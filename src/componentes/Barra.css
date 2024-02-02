@@ -1,4 +1,9 @@
 
+.bg-body {
+  background-color: #f8f9fa; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+  border-radius: 10px;
+}
 
 /* Estilos para los enlaces generados dinámicamente */
 .custom-collapse .nav-link {
@@ -9,7 +14,18 @@
 }
 
 .custom-collapse .nav-link:hover {
-  color: #007bff; 
+  color: #e2e611; 
+  background-color: #000000;
+  border-radius: 10px;
+}
+
+.custom-collapse .nav-link:focus {
+  color: #e2e611; 
+  background-color: #000000;
+  border-radius: 10px;
+  text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
+  text-decoration: none;
+  outline: none;
 }
 
 /* Estilos para el botón de cambio de idioma */
@@ -23,7 +39,7 @@
 }
 
 .language-button button:hover {
-  background-color: #0056b3;
+  background-color: #00346b;
 }
 
 .navbar-collapse {

@@ -18,7 +18,11 @@ function Projects() {
     Springboot: 'fas fa-code',
     Thymeleaf: 'fa-solid fa-leaf',
     Deepnote: 'fas fa-book-open',
-    Excel: 'fas fa-file-excel',
+    Excel: 'fas fa-excel',
+    Numpy: 'fas fa-code',
+    Pandas: 'fas fa-code',
+    Matplotlib: 'fas fa-code',
+    Seaborn: 'fas fa-code',
   };
 
   // Ejemplo de datos de proyectos
@@ -43,7 +47,7 @@ function Projects() {
       id: 5,
       title: 'Proyecto Final Big Data',
       description: 'Proyecto Final, donde se implemento diferentes intrumentos de analisis de datos y big data',
-      tecnologias: ['Python', 'Excel', 'Deepnote', 'MySql', 'Bootstrap'],
+      tecnologias: ['Python', 'Excel', 'Deepnote', 'MySql', 'Numpy', 'Pandas', 'Matplotlib', 'Seaborn'],
       linkYotube: 'https://www.youtube.com/embed/kyzCkpCHaGI?si=smvaN9F9Wn75VZQq',
       link: 'https://deepnote.com/workspace/eduardommoreno-34ae987d-0d5e-4172-936b-60005e69667f/project/c23664-Eduardo-Moreno-TPintegrador-57a710b8-5854-4f44-a9e8-4a17d1732d80/notebook/0.%20Consignas%20%2B%20Redes%20Sociales-a13245fd02f84ed48077777de1da7da5',
     },

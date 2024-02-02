@@ -9,10 +9,6 @@ footer {
 }
 
 /* BARRA LATERAL DE REDES */
-.sidebar {
-  display: inline;
-}
-
 .sidebar ul {
   list-style: none;
   padding: 0;
@@ -45,7 +41,6 @@ footer {
 }
 
 .sidebar a:hover .social-name {
-  display: inline;
   margin-left: 5px; 
 }
 
@@ -53,7 +48,7 @@ footer {
   color: #0077b5; /* Cambia el color al azul de LinkedIn */
 }
 .sidebar a:hover .fab.fa-github {
-  color: #ffffff; /* Cambia el color al negro de GitHub */
+  color: #000000; /* Cambia el color al negro de GitHub */
 }
 .sidebar a:hover .fab.fa-instagram {
   color: #e4405f; /* Cambia el color al rosa de Instagram */

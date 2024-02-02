@@ -1,5 +1,5 @@
 import './Main.css';
-import React, { useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 
 function Main() {
 
@@ -36,8 +36,7 @@ function Main() {
       <img src={process.env.PUBLIC_URL + "/imagenes/fotoEduMMoreno.png"} alt="Foto de Eduardo Manuel Moreno" />
       <hr></hr>
       <p>
-        Soy un programador con una pasión por la tecnología y la resolución de problemas.
-        En busca de oportunidades y proyectos emocionantes.
+        Soy un programador junior apasionado por la tecnología, recién graduado y listo para aplicar mis habilidades en proyectos desafiantes. Mi fuerza radica en aprender constantemente, y actualmente estoy inmerso en proyectos personales para ampliar mi conocimiento. Colaborador comprometido y solucionador de problemas, busco un equipo que comparta mi visión de innovación y calidad en la programación. ¡Conéctame en LinkedIn si buscas un talento motivado para llevar tus proyectos al siguiente nivel!
       </p>
     </div>
   );

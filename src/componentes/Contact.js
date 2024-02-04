@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Contact.css"
+
+
 
 const socialLinks = [
   {
@@ -77,7 +79,9 @@ const contactText = {
 };
 
 function Contact() {
-  const language = 'espanol'; // Cambia a 'english' para cambiar el idioma
+  const language = 'espanol';
+
+  const [showSocialLinks, setShowSocialLinks] = useState(false);
 
   return (
     <section id="contact" className="container text-center ">
@@ -88,17 +92,22 @@ function Contact() {
 
         <p>{contactText.contactMessage[language]}</p>
         <p>{contactText.lookingForward[language]}</p>
+
         <div className="social2-links">
-          <ul className="sidebar2">
-            {socialLinks.map((link) => (
-              <li key={link.id}>
-                <a href={link.link} target="_blank" rel="noopener noreferrer">
-                  <i className={link.iconClass} style={{ color: link.color }}>{` ${link.platform}`}</i>
-                </a>
-              </li>
-            ))}
-          </ul>
-        </div>
+          <button className="btn-outline-info" onClick={() => setShowSocialLinks(!showSocialLinks)}>
+            {showSocialLinks ? 'Ocultar Redes' : 'Mostrar Redes'}
+          </button>
+          {showSocialLinks && (
+            <ul className="sidebar2">
+              {socialLinks.map((link) => (
+                <li key={link.id}>
+                  <a href={link.link} target="_blank" rel="noopener noreferrer">
+                    <i className={link.iconClass} style={{ color: link.color }}>{` ${link.platform}`}</i>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}</div>
       </div>
       <div className="d-flex-column ">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4FqRrnjIti1MvLQoNTuu-SCYC1EsYeQZM3MS3e79QGcPJoA/viewform?embedded=true" width="640" height="1066" frameborder="0" marginheight="0" marginwidth="0" title="googleform">Cargando…</iframe>

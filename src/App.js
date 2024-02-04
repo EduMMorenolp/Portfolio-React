@@ -9,20 +9,33 @@ import Certificados from './componentes/Certificados';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import React, { useState } from 'react';
 import { Element } from 'react-scroll';
+import textContent from './textContent';
+
+
 
 
 function App() {
   const [currentSection, setCurrentSection] = useState("Inicio");
-  
+  const [languageContent, setLanguage] = useState(textContent['espanol']);
+
+
   const handleSectionChange = (sectionName) => {
     setCurrentSection(sectionName);
   };
 
+  const handleLanguageChange = () => {
+    const newLanguage = languageContent === textContent['espanol'] ? textContent['english'] : textContent['espanol'];
+
+    setLanguage(newLanguage);
+    console.log("Cambiando Idioma a", newLanguage);
+  };
+
   return (
     <div className="App">
-      <Barra onSectionChange={handleSectionChange}/>
+      <Barra onSectionChange={handleSectionChange} onLanguageChange={handleLanguageChange} languageContent={languageContent} setLanguage={setLanguage} />
+
       <Element name="Inicio">
-        {currentSection === "Inicio" && <Main />}
+        {currentSection === "Inicio" && <Main languageContent={languageContent}/>}
       </Element>
       <Element name="Proyectos">
         {currentSection === "Proyectos" && <Projects />}
@@ -31,13 +44,13 @@ function App() {
         {currentSection === "Contacto" && <Contact />}
       </Element>
       <Element name="Habilidades">
-        {currentSection === "Habilidades" && <Skills/>}
+        {currentSection === "Habilidades" && <Skills />}
       </Element>
       <Element name="Certificados">
-        {currentSection === "Certificados" && <Certificados/>}
+        {currentSection === "Certificados" && <Certificados />}
       </Element>
       <Footer />
-     
+
     </div>
   );
 }

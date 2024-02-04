@@ -2,13 +2,10 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import './Barra.css';
-import React, { useState } from 'react';
+import React from 'react';
 import textContent from '../textContent';
 
-
-function Barra({ onSectionChange }) {
-
-    const [languageContent, setLanguage] = useState(textContent['espanol']);
+function Barra({ onSectionChange, onLanguageChange, languageContent, setLanguage }) {
 
     const handleNavLinkClick = (sectionName) => {
         onSectionChange(sectionName);
@@ -18,7 +15,7 @@ function Barra({ onSectionChange }) {
         const newLanguage = languageContent === textContent['espanol'] ? textContent['english'] : textContent['espanol'];
 
         setLanguage(newLanguage);
-        console.log("Cambiando Idioma a", newLanguage);
+        onLanguageChange();
     };
 
     return (

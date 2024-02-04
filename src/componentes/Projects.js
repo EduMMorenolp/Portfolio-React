@@ -75,7 +75,6 @@ function Projects() {
       linkYotube: 'https://www.youtube.com/embed/cMoa_k5ESX4',
       link: 'https://www.ejemplolink1.com',
     },
-    // Agrega más proyectos según tus necesidades
   ];
 
   return (
@@ -85,7 +84,7 @@ function Projects() {
       <hr></hr>
       <div className="row">
         {projects.map((project) => (
-          <div key={project.id} className="col-4">
+          <div key={project.id}>
             <div className="card mb-4 ceddi ">
               <div className="card-body mb-4">
                 <h3 className="card-title mb-4">{project.title}</h3>

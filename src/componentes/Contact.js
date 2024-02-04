@@ -109,8 +109,8 @@ function Contact() {
             </ul>
           )}</div>
       </div>
-      <div className="d-flex-column ">
-        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4FqRrnjIti1MvLQoNTuu-SCYC1EsYeQZM3MS3e79QGcPJoA/viewform?embedded=true" width="640" height="1066" frameborder="0" marginheight="0" marginwidth="0" title="googleform">Cargando…</iframe>
+      <div className="formulario">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4FqRrnjIti1MvLQoNTuu-SCYC1EsYeQZM3MS3e79QGcPJoA/viewform?embedded=true" title="googleform">Cargando…</iframe>
       </div>
     </section>
   );

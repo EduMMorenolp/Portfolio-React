@@ -63,14 +63,13 @@ const Certificados = () => {
       alt: "Certificado Udemy",
     },
     {
-      src: process.env.PUBLIC_URL + "/imagenes/certificados/14.png",
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/14.jpg",
       alt: "Certificado Udemy",
     }
   ];
 
   return (
-    <div id="educacion" className="tarjeta">
-      <div className="tarjeta">
+    <div id="educacion" className="tarjetacertificados">
         <h3>Certificaciones</h3>
         <Carousel interval={3000}>
           {certificados.map((imagen, index) => (
@@ -79,11 +78,7 @@ const Certificados = () => {
             </Carousel.Item>
           ))}
         </Carousel>
-      </div>
-      <div className="tarjeta">
-        
         <h3>Certificaciones Udemy</h3>
-
         <Carousel interval={3000}>
           {certificadosUdemy.map((imagen, index) => (
             <Carousel.Item key={index}>
@@ -91,7 +86,6 @@ const Certificados = () => {
             </Carousel.Item>
           ))}
         </Carousel>
-      </div>
     </div>
   );
 }

@@ -22,7 +22,7 @@ function Main({ languageContent }) {
     <div id="sobre-mi" className="tarjeta">
       <h1 className="display-4">{languageContent.esp_main}</h1>
 
-      <div className=" nombre-container">
+      <div>
         <span className="nombre-estilo">
           {nombre.slice(0, currentIndex)}
         </span>

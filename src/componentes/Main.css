@@ -48,10 +48,3 @@
   text-shadow: 2px 2px 4px black;
   align-items: flex-end;
 }
-
-.nombre-container {
-  overflow: hidden;
-  white-space: nowrap;
-  align-items: center;
-}
-

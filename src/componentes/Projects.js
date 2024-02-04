@@ -86,7 +86,7 @@ function Projects() {
       <div className="row">
         {projects.map((project) => (
           <div key={project.id} className="col-4">
-            <div className="card mb-4 ceddi">
+            <div className="card mb-4 ceddi ">
               <div className="card-body mb-4">
                 <h3 className="card-title mb-4">{project.title}</h3>
                 <hr></hr>

@@ -3,7 +3,7 @@ import { Carousel } from 'react-bootstrap';
 import './Certificados.css';
 
 const Certificados = () => {
-  const imagenes = [
+  const certificados = [
     {
       src: process.env.PUBLIC_URL + "/imagenes/certificados/0.png",
       alt: "Certificado",
@@ -32,46 +32,66 @@ const Certificados = () => {
       src: process.env.PUBLIC_URL + "/imagenes/certificados/6.png",
       alt: "Certificado",
     },
+  ]
+  const certificadosUdemy = [
     {
       src: process.env.PUBLIC_URL + "/imagenes/certificados/7.png",
-      alt: "Certificado",
+      alt: "Certificado Udemy",
     },
     {
       src: process.env.PUBLIC_URL + "/imagenes/certificados/8.png",
-      alt: "Certificado",
+      alt: "Certificado Udemy",
     },
     {
       src: process.env.PUBLIC_URL + "/imagenes/certificados/9.png",
-      alt: "Certificado",
+      alt: "Certificado Udemy",
     },
     {
       src: process.env.PUBLIC_URL + "/imagenes/certificados/10.png",
-      alt: "Certificado",
+      alt: "Certificado Udemy",
     },
     {
       src: process.env.PUBLIC_URL + "/imagenes/certificados/11.png",
-      alt: "Certificado",
+      alt: "Certificado Udemy",
     },
     {
       src: process.env.PUBLIC_URL + "/imagenes/certificados/12.png",
-      alt: "Certificado",
+      alt: "Certificado Udemy",
     },
     {
       src: process.env.PUBLIC_URL + "/imagenes/certificados/13.png",
-      alt: "Certificado",
+      alt: "Certificado Udemy",
+    },
+    {
+      src: process.env.PUBLIC_URL + "/imagenes/certificados/14.png",
+      alt: "Certificado Udemy",
     }
   ];
 
   return (
     <div id="educacion" className="tarjeta">
-      <h3>Certificaciones</h3>
-      <Carousel interval={3000}>
-        {imagenes.map((imagen, index) => (
-          <Carousel.Item key={index}>
-            <img className="d-block w-100" src={imagen.src} alt={imagen.alt} />
-          </Carousel.Item>
-        ))}
-      </Carousel>
+      <div className="tarjeta">
+        <h3>Certificaciones</h3>
+        <Carousel interval={3000}>
+          {certificados.map((imagen, index) => (
+            <Carousel.Item key={index}>
+              <img className="d-block w-100" src={imagen.src} alt={imagen.alt} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
+      <div className="tarjeta">
+        
+        <h3>Certificaciones Udemy</h3>
+
+        <Carousel interval={3000}>
+          {certificadosUdemy.map((imagen, index) => (
+            <Carousel.Item key={index}>
+              <img className="d-block w-100" src={imagen.src} alt={imagen.alt} />
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
     </div>
   );
 }

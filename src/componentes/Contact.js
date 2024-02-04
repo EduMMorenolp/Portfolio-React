@@ -1,4 +1,5 @@
 import React from 'react';
+import "./Contact.css"
 
 const socialLinks = [
   {
@@ -79,13 +80,13 @@ function Contact() {
   const language = 'espanol'; // Cambia a 'english' para cambiar el idioma
 
   return (
-    <section id="contact" className="container text-center">
+    <section id="contact" className="container text-center ">
       <div id="contacto" className="tarjeta">
         <h2>{contactText.title[language]}</h2>
         <p><a href={`mailto:${contactText.email[language]}`}>{contactText.email[language]}</a></p>
-        <p>{contactText.cv[language]}: <a href="descargas/Curriculum%20Developer%202023.docx" download className="boton-descargar">{contactText.downloadCV[language]}</a></p>
+        <p>{contactText.cv[language]}: <a href="/imagenes/CVEduardoMorenoDevFullStack.pdf" download className="boton-descargar">{contactText.downloadCV[language]}</a></p>
+
         <p>{contactText.contactMessage[language]}</p>
-        <p>{contactText.contactForm[language]}</p>
         <p>{contactText.lookingForward[language]}</p>
         <div className="social2-links">
           <ul className="sidebar2">
@@ -98,6 +99,9 @@ function Contact() {
             ))}
           </ul>
         </div>
+      </div>
+      <div className="d-flex-column ">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSf4FqRrnjIti1MvLQoNTuu-SCYC1EsYeQZM3MS3e79QGcPJoA/viewform?embedded=true" width="640" height="1066" frameborder="0" marginheight="0" marginwidth="0" title="googleform">Cargando…</iframe>
       </div>
     </section>
   );

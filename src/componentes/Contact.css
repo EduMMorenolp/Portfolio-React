@@ -13,9 +13,10 @@
 }
 
 #contact p {
-  font-size: 18px;
+  font-size: 20px;
   color: #666;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 #contact ul {

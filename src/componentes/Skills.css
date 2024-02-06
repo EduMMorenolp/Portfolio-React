@@ -49,6 +49,7 @@
 .chp:hover,
 .cbdd:hover {
   /* Agregamos .cbdd:hover para aplicar el zoom a la tarjeta de Base de Datos */
+  box-shadow: 0 6px 8px rgba(58, 30, 216, 0.2);
   transform: scale(1.05);
 }
 

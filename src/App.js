@@ -31,7 +31,7 @@ function App() {
   };
 
   return (
-    <div className="App">
+    <div className="appbody">
       <Barra onSectionChange={handleSectionChange} onLanguageChange={handleLanguageChange} languageContent={languageContent} setLanguage={setLanguage} />
 
       <Element name="Inicio">

@@ -4,6 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import './Barra.css';
 import React from 'react';
 import textContent from '../textContent';
+import Switch from './Switch';
 
 function Barra({ onSectionChange, onLanguageChange, languageContent, setLanguage }) {
 
@@ -20,12 +21,15 @@ function Barra({ onSectionChange, onLanguageChange, languageContent, setLanguage
 
     return (
         <Navbar expand="lg" className="bg-body">
+
             <Container>
+
                 <div className="language-button">
                     <button onClick={handleLanguageChange}>
                         {languageContent === textContent['espanol'] ? 'In English' : 'En Español'}
                     </button>
                 </div>
+
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav" className="custom-collapse">
                     <Nav.Link onClick={() => handleNavLinkClick("Inicio")}>
@@ -44,11 +48,9 @@ function Barra({ onSectionChange, onLanguageChange, languageContent, setLanguage
                         {languageContent.contacto}
                     </Nav.Link>
                 </Navbar.Collapse>
-
-
+                <Switch></Switch>
             </Container>
         </Navbar>
-
     );
 }
 
